@@ -1,0 +1,136 @@
+:root {
+    --dark: #5e2814;
+    --normal: #84361a;
+    --light: #7e4530;
+    --lighter: #956f61;
+  }
+
+  body {
+    background: var(--normal);
+    padding: 0;
+    margin: 0;;
+}
+
+.navbar {
+    background:var(--normal);
+}
+.nav-link,
+.navbar-brand {
+    color: white;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #000;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+li {
+    list-style: circle;
+    z-index: 1; /* The z-index should be higher than Google Maps */
+
+  }
+
+  
+  #map {
+    height: 600px;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+  }
+  
+  .header {
+    background-image: url('rocks.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.intro {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+.intro h1 {
+	color: var(--light);
+}
+.intro p {
+	color: white;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+.intro button {
+    border:1px solid var(--dark);
+    background:var(--normal);
+    border-radius: 0;
+    color:#ffffff;
+    padding: 16px 20px;
+    margin: 10px 10px;
+    border-radius: 10%;
+    
+}
+
+.intro button:hover {
+	border:1px solid var(--normal);
+    background:var(--lighter);
+    color:var(--normal);
+}
+
+.features {
+    color: white;
+	margin: 4em auto;
+	padding: 1em;
+	position: relative;
+    margin-bottom: 20px;
+    
+
+}
+.feature-title {
+	color: white;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+input[type=text] {
+    background-color: var(--lighter);
+    width: 100%;
+  }
+
+input[type=button], input[type=submit], input[type=reset] {
+    border:1px solid var(--dark);
+    background:var(--lighter);
+    border-radius: .5;
+    color:#ffffff;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 10px;
+    border-radius: 10%;
+  }
+  
+.table{
+    background-color:var(--lighter);
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+
+}
